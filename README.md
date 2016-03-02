@@ -4,7 +4,15 @@ This repository contains the necessary files for codehighlighting of [HydroGeoSp
 
 There are various options for text editors that understand this setup, it is tested using [TextMate][TM] on OSX and [SublimeText][ST] (versions for various flavours of operating systems exist). Other text editors that understand `tmLanguage` syntax specifications exist.
 
+<figure>
+    <img src='./img/screenshot_TM.jpg' alt='Screenshot of TextMate with hgs syntax highlighted.' />
+    <figcaption>Screenshot of TextMate with hgs syntax highlighted.</figcaption>
+</figure>
 
+<figure>
+    <img src='./img/screenshot_ST.jpg' alt='Screenshot of SublimeText with hgs syntax highlighted.' />
+    <figcaption>Screenshot of SublimeText with hgs syntax highlighted.</figcaption>
+</figure>
 
 This repository contains "compiled" version of the necessary files that need to be put into proper folders (see Section "Installation"). This repository contains also the [syntax definition as ASCII file][syntax_def_ascii].
 
@@ -20,14 +28,14 @@ The installation for TextMate is straight forward:
 2. double click and follow the instructions
 
 ### SublimeText 
-Two files need to be copied at two different locations. The destinations vary, depending on which version of SublimeText you use
+Two files need to be copied at two different locations. The destinations vary, depending on which version of SublimeText you use.
 
 #### Directories
 
 _OSX_:
 
 - version 2: go to `/Applications/Sublime\ Text.app/Contents/MacOS/Packages`
-- version 3: go to `Sublie Text` - `Preferences` - `Browse Packages`
+- version 3: go to `Sublime Text` - `Preferences` - `Browse Packages`
 
 _WINDOWS_:
 
@@ -44,7 +52,7 @@ _WINDOWS_:
 #### 2. Color Scheme
 
 - copy the [SublimeText color scheme][ST_color_scheme] to one of the two paths described above
-- go to `Sublie Text` - `Preferences` - `Settings - User`; a file will pop up where you can specity the color scheme you want to use, in this case refer to the one you just copied by its file name. Typically, this could look like this:
+- go to `Sublime Text` - `Preferences` - `Settings - User`; a file will pop up where you can specity the color scheme you want to use, in this case refer to the one you just copied by its file name. Typically, this could look like this:
 
     // Settings in here override those in "Default/Preferences.sublime-settings",
     // and are overridden in turn by file type specific settings.
