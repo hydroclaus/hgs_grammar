@@ -3,7 +3,7 @@
 			comment = 'problem description at the beginning of the grok file';
 			begin = '\A';
 			end = 'end title\n';
-			patterns = ( { match = '.+?(?=end\s[Tt]itle)'; } );
+			patterns = ( { match = '(?:(?!""end\stitle"").)*'; } );
 		},
 		{	name = 'keyword.grok';
 			comment = 'certain repeating keywords';
