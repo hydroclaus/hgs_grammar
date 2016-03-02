@@ -68,7 +68,7 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 
 ## Notes
 
-[ ] investigate why the preamble does not show up as comment block in SublimeText
+- [ ] investigate why the preamble does not show up as comment block in SublimeText
 
 
 
