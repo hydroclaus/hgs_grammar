@@ -7,11 +7,11 @@
 		},
 		{	name = 'keyword.grok';
 			comment = 'certain repeating keywords';
-			match = '[Nn]ew|[Uu]se|[Cc]lear|[Cc]hoose|[Cc]reate|[Rr]ead|end';
+			match = '[Nn]ew\s|[Uu]se\s|[Cc]lear\s|[Cc]hoose\s|[Cc]reate\s|[Rr]ead\s|end\s';
 		},
 		{	name = 'variable.grok';
 			comment = 'Tab stops like $1, $2...';
-			match = 'units|porous\smedia|surface|fracture|dual|channel|\set';
+			match = 'units|porous\smedia|surface\n|fracture|\sdual\s|channel|\set';
 		},
 		{	name = 'constant.numeric.grok';
 			comment = 'numbers';
