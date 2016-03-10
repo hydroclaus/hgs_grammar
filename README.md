@@ -2,6 +2,8 @@
 
 This repository contains the necessary files for codehighlighting of [HydroGeoSphere][hgs] input files ("grok files"): The definition of the syntax of such input files, and the definition of which syntax to show in what coloring options. 
 
+__Signature Feature__: Everything between "Skip on" and "Skip off" is highlighted as a block comment.
+
 There are various options for text editors that understand this setup, it is tested using [TextMate][TM] on OSX and [SublimeText][ST] (versions for various flavours of operating systems exist). Other text editors that understand `tmLanguage` syntax specifications exist.
 
 <figure>
