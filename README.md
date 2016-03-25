@@ -73,6 +73,12 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 - [ ] investigate why the preamble does not show up as comment block in SublimeText
 
 
+## References
+
+- Textmate [Bundle Style Guide][TM:BSG]
+- Textmate [Regular Expressions][TM:RegEx]
+- notes on [Textmate Grammar][notes:TMGrammar]
+
 
 [hgs]: http://www.aquanty.com/hydrogeosphere/
 [TM]: http://macromates.com/
@@ -83,3 +89,6 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 [hgs.tmbundle]: ./packages/hgs.tmbundle
 [ST_color_scheme]: ./packages/Color%20Scheme%20-%20hgs.sublime-package
 [ST_syntax]: ./packages/hgs.sublime-package
+[TM:BSG]: http://wiki.macromates.com/Bundles/StyleGuide
+[TM:RegEx]: http://manual.macromates.com/en/regular_expressions#regular_expressions
+[notes:TMGrammar]: http://www.apeth.com/nonblog/stories/textmatebundle.html
