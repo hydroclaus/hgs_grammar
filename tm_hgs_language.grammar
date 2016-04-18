@@ -3,19 +3,26 @@
 			comment = 'problem description at the beginning of the grok file';
 			begin = '\A';
 			end = 'end title\n';
-			patterns = ( { match = '(?:(?!""end\stitle"").)*'; } );
 		},
-		{	name = 'keyword.grok';
+		{	name = 'keyword.language.grok';
 			comment = 'certain repeating keywords';
-			match = '[Nn]ew\s|[Uu]se\s|[Cc]lear\s|[Cc]hoose\s|[Cc]reate\s|[Rr]ead\s|end\s';
+			match = '[Nn]ew\s|[Uu]se\s|[Cc]lear\s|[Cc]hoose\s|[Cc]reate\s|[Rr]ead\s|[eE]nd\s';
 		},
 		{	name = 'variable.grok';
 			comment = 'Tab stops like $1, $2...';
 			match = 'units|porous\smedia|surface\n|fracture|\sdual\s|channel|\set';
 		},
+		{	name = 'variable.parameter.grok';
+			comment = 'Tab stops like $1, $2...';
+			match = 'solute|boundary condition';
+		},
+		{	name = 'storage.grok';
+			comment = 'Tab stops like $1, $2...';
+			match = 'txt|dat|mprops|etprops|fprops|dprops|oprops';
+		},
 		{	name = 'constant.numeric.grok';
-			comment = 'numbers';
-			match = '(\b[0-9]*\.*[0-9]*[ed][\+\-]*[0-9]+\s|\b[\+\-]?[0-9]*\.*[0-9]*\s)';
+			comment = 'numbers: decimal or exponential';
+			match = '(\b[0-9]*\.*[0-9]*[ed][\+\-]*[0-9]+\s|\b[\+\-]?[0-9]\.?[0-9]*\s?)';
 		},
 		{	name = 'comment.line.grok';
 			comment = 'commented line';

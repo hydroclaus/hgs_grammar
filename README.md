@@ -70,15 +70,24 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 
 ## Notes
 
-- [ ] investigate why the preamble does not show up as comment block in SublimeText
+- [x] investigate why the preamble does not show up as comment block in SublimeText (solved 2016-Apr-18)
 
 
 ## References
-
+- Textmate [Language Grammars][TM:LanguageG]
 - Textmate [Bundle Style Guide][TM:BSG]
 - Textmate [Regular Expressions][TM:RegEx]
 - notes on [Textmate Grammar][notes:TMGrammar]
 
+
+## Release Notes
+
+### 2016-Apr-18
+- fix: everything from the beginning of the file until "end title" is now treated as a block comment
+- new: included "end" or "End" as keyword
+- new: "solute" and "boundary condtions" appear as `variable.parameter`
+- new: the following file extensions are highlighted as `storage`: txt, dat, mprops, etprops, fprops, dprops, oprops (note: possibly, it could make sense to highlight the full line (including the path and name of the files), however, I decided to stay parsimoneous for now)
+- fix: recognizes numbers (floats, exponential) to be separated by a comma; as far as HydroGeoSphere is concerned, there can be also 'just' a space; a dot is the decimal separator
 
 [hgs]: http://www.aquanty.com/hydrogeosphere/
 [TM]: http://macromates.com/
@@ -92,3 +101,4 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 [TM:BSG]: http://wiki.macromates.com/Bundles/StyleGuide
 [TM:RegEx]: http://manual.macromates.com/en/regular_expressions#regular_expressions
 [notes:TMGrammar]: http://www.apeth.com/nonblog/stories/textmatebundle.html
+[TM:LanguageG]: http://manual.macromates.com/en/language_grammars#language_rules

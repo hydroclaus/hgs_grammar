@@ -19,21 +19,14 @@
 			<string>end title\n</string>
 			<key>name</key>
 			<string>comment.block.beginnig.grok</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>(?:(?!""end\stitle"").)*</string>
-				</dict>
-			</array>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>certain repeating keywords</string>
 			<key>match</key>
-			<string>[Nn]ew\s|[Uu]se\s|[Cc]lear\s|[Cc]hoose\s|[Cc]reate\s|[Rr]ead\s|end\s</string>
+			<string>[Nn]ew\s|[Uu]se\s|[Cc]lear\s|[Cc]hoose\s|[Cc]reate\s|[Rr]ead\s|[eE]nd\s</string>
 			<key>name</key>
-			<string>keyword.grok</string>
+			<string>keyword.language.grok</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -45,9 +38,25 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Tab stops like $1, $2...</string>
+			<key>match</key>
+			<string>solute|boundary condition</string>
+			<key>name</key>
+			<string>variable.parameter.grok</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Tab stops like $1, $2...</string>
+			<key>match</key>
+			<string>txt|dat|mprops|etprops|fprops|dprops|oprops</string>
+			<key>name</key>
+			<string>storage.grok</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>numbers: decimal or exponential</string>
 			<key>match</key>
-			<string>(\b[0-9]*\.*[0-9]*[ed][\+\-]*[0-9]+\s|\b[\+\-]?[0-9]*\.*[0-9]*\s)</string>
+			<string>(\b[0-9]*\.*[0-9]*[ed][\+\-]*[0-9]+\s|\b[\+\-]?[0-9]\.?[0-9]*\s?)</string>
 			<key>name</key>
 			<string>constant.numeric.grok</string>
 		</dict>
