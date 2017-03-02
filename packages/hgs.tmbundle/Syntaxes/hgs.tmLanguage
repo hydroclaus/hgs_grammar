@@ -12,11 +12,11 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>\A</string>
+			<string>^[Pp]roblem [Dd]escription</string>
 			<key>comment</key>
 			<string>problem description at the beginning of the grok file</string>
 			<key>end</key>
-			<string>end title\n</string>
+			<string>!--- End\s*[Pp]roblem [Dd]escription\n</string>
 			<key>name</key>
 			<string>comment.block.beginnig.grok</string>
 		</dict>
