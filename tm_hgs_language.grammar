@@ -1,8 +1,8 @@
 {	patterns = (
 		{	name = 'comment.block.beginnig.grok';
 			comment = 'problem description at the beginning of the grok file';
-			begin = '\A';
-			end = 'end title\n';
+			begin = '^[Pp]roblem [Dd]escription';
+			end = '!--- End\s*[Pp]roblem [Dd]escription\n';
 		},
 		{	name = 'keyword.language.grok';
 			comment = 'certain repeating keywords';
