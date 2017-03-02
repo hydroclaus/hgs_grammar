@@ -1,10 +1,19 @@
 # HydroGeoSphere Language Grammar
 
-This repository contains the necessary files for codehighlighting of [HydroGeoSphere][hgs] input files ("grok files"): The definition of the syntax of such input files, and the definition of which syntax to show in what coloring options. 
+This repository contains the necessary files for codehighlighting / 'syntax'-highlighting of [HydroGeoSphere][hgs] input files (`grok`, `mprops`, etc.): The definition of the syntax of such input files, and the definition of which syntax to show in what coloring options. 
 
-__Signature Feature__: Everything between "Skip on" and "Skip off" is highlighted as a block comment.
+## Features:
 
-There are various options for text editors that understand this setup, it is tested using [TextMate][TM] on OSX and [SublimeText][ST] (versions for various flavours of operating systems exist). Other text editors that understand `tmLanguage` syntax specifications exist.
+- everything between "Skip on" and "Skip off" is greyed out as a block comment;
+- the "problem description" at the beginning is greyed out as a block comment;
+- comments indicated by a "!" are greyed out (as comments);
+- file endings (`.txt`, etc.) of input files are coloured;
+- numbers are highlighted;
+- domain names (porous medium, surface, etc.) are highlighted;
+- certain keywords ('end', 'clear', 'choose') are highlighted;
+
+
+There are various options for text editors that understand this setup, it is tested using [TextMate][TM] on OSX and [SublimeText][ST] (versions for various flavours of operating systems exist). Other text editors that understand `tmLanguage` syntax specifications exist (Atom, Visual Studio Code, etc.).
 
 <figure>
     <img src='./img/screenshot_TM.jpg' alt='Screenshot of TextMate with hgs syntax highlighted.' />
@@ -68,9 +77,6 @@ NOTE: the file ending of the package is not demanded here (no `sublime-package`)
 ## Color Schemes
 Color schemes can be viewed, modified, and created using [this][online_themes] online theme editor
 
-## Notes
-
-- [x] investigate why the preamble does not show up as comment block in SublimeText (solved 2016-Apr-18)
 
 
 ## References
@@ -81,6 +87,13 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 
 
 ## Release Notes
+
+### 2017-Mar-02
+- preparation for HydroGeoSphere user meeting in Bayreuth
+- fix for problem definition at beginning for both Sublime Text and TextMate
+
+### 2016-Feb-28
+- initial commit
 
 ### 2016-Apr-18
 - fix: everything from the beginning of the file until "end title" is now treated as a block comment
