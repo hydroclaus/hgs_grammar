@@ -12,11 +12,11 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>^[Pp]roblem [Dd]escription</string>
+			<string>[Ss]tart [Tt]itle\n</string>
 			<key>comment</key>
 			<string>problem description at the beginning of the grok file</string>
 			<key>end</key>
-			<string>!--- End\s*[Pp]roblem [Dd]escription\n</string>
+			<string>[Ee]nd [Tt]itle\n</string>
 			<key>name</key>
 			<string>comment.block.beginnig.grok</string>
 		</dict>
@@ -32,7 +32,7 @@
 			<key>comment</key>
 			<string>Tab stops like $1, $2...</string>
 			<key>match</key>
-			<string>units|porous\smedia|surface\n|fracture|\sdual\s|channel|\set</string>
+			<string>units|^porous\smedia|^surface\n|fracture|\sdual\s|^channel|^et</string>
 			<key>name</key>
 			<string>variable.grok</string>
 		</dict>
@@ -40,7 +40,7 @@
 			<key>comment</key>
 			<string>Tab stops like $1, $2...</string>
 			<key>match</key>
-			<string>solute|boundary condition</string>
+			<string>\ssolute|boundary condition</string>
 			<key>name</key>
 			<string>variable.parameter.grok</string>
 		</dict>

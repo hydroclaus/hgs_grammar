@@ -1,8 +1,8 @@
 {	patterns = (
 		{	name = 'comment.block.beginnig.grok';
 			comment = 'problem description at the beginning of the grok file';
-			begin = '[Ss]tart [Tt]itle\n';
-			end = '[Ee]nd [Tt]itle\n';
+			begin = '\A';
+			end = 'end title\n';
 		},
 		{	name = 'keyword.language.grok';
 			comment = 'certain repeating keywords';
@@ -10,11 +10,11 @@
 		},
 		{	name = 'variable.grok';
 			comment = 'Tab stops like $1, $2...';
-			match = 'units|^porous\smedia|^surface\n|fracture|\sdual\s|^channel|^et';
+			match = 'units|porous\smedia|surface\n|fracture|\sdual\s|channel|\set';
 		},
-	 	{	name = 'variable.parameter.grok';
+		{	name = 'variable.parameter.grok';
 			comment = 'Tab stops like $1, $2...';
-			match = '\ssolute|boundary condition';
+			match = 'solute|boundary condition';
 		},
 		{	name = 'storage.grok';
 			comment = 'Tab stops like $1, $2...';
