@@ -21,12 +21,12 @@ Other text editors that understand `tmLanguage` syntax specifications exist (Ato
 
 <figure>
     <img src='./img/2017_03_comparison.png' alt='Comparison: grok file without (left) and with (right) hgs syntax highlighted.' />
-    <figcaption>Comparison: grok file without (left) and with (right) hgs syntax highlighted.</figcaption>
+    <figcaption align="center"><cite>Comparison: grok file without (left) and with (right) hgs syntax highlighted.</cite></figcaption>
 </figure>
 
 <figure>
     <img src='./img/2017_03_screenshot_ST.png' alt='Screenshot of SublimeText with hgs syntax highlighted.' />
-    <figcaption align="center">Screenshot of SublimeText with hgs syntax highlighted.</figcaption>
+    <figcaption align="center"><cite>Screenshot of SublimeText with hgs syntax highlighted.</cite></figcaption>
 </figure>
 
 This repository contains "compiled" version of the necessary files that need to be put into proper folders (see Section "Installation"). This repository contains also the [syntax definition as ASCII file][syntax_def_ascii].
