@@ -2,7 +2,7 @@
 
 This repository contains the necessary files for codehighlighting / 'syntax'-highlighting of [HydroGeoSphere][hgs] input files (`grok`, `mprops`, etc.): The definition of the syntax of such input files, and the definition of which syntax to show in what coloring options. 
 
-## Features:
+## Features
 
 - everything between "Skip on" and "Skip off" is greyed out as a block comment;
 - the "problem description" at the beginning is greyed out as a block comment;
@@ -12,22 +12,25 @@ This repository contains the necessary files for codehighlighting / 'syntax'-hig
 - domain names (porous medium, surface, etc.) are highlighted;
 - certain keywords ('end', 'clear', 'choose') are highlighted;
 
+## Text Editors
+There are various options for text editors that understand this setup, it is tested using
+- [TextMate][TM] on OSX and 
+- [SublimeText][ST] (cross-platform, versions for various flavours of operating systems exist). 
 
-There are various options for text editors that understand this setup, it is tested using [TextMate][TM] on OSX and [SublimeText][ST] (versions for various flavours of operating systems exist). Other text editors that understand `tmLanguage` syntax specifications exist (Atom, Visual Studio Code, etc.).
+Other text editors that understand `tmLanguage` syntax specifications exist (Atom, Visual Studio Code, etc.).
 
 <figure>
-    <img src='./img/screenshot_TM.jpg' alt='Screenshot of TextMate with hgs syntax highlighted.' />
-    <figcaption>Screenshot of TextMate with hgs syntax highlighted.</figcaption>
+    <img src='./img/2017_03_comparison.png' alt='Comparison: grok file without (left) and with (right) hgs syntax highlighted.' />
+    <figcaption>Comparison: grok file without (left) and with (right) hgs syntax highlighted.</figcaption>
 </figure>
 
 <figure>
-    <img src='./img/screenshot_ST.jpg' alt='Screenshot of SublimeText with hgs syntax highlighted.' />
+    <img src='./img/2017_03_screenshot_ST.png' alt='Screenshot of SublimeText with hgs syntax highlighted.' />
     <figcaption>Screenshot of SublimeText with hgs syntax highlighted.</figcaption>
 </figure>
 
 This repository contains "compiled" version of the necessary files that need to be put into proper folders (see Section "Installation"). This repository contains also the [syntax definition as ASCII file][syntax_def_ascii].
 
-Please contact me with questions related to the syntax or suggestions for improvements.
 
 ## Installation
 
@@ -84,6 +87,7 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 - Textmate [Bundle Style Guide][TM:BSG]
 - Textmate [Regular Expressions][TM:RegEx]
 - notes on [Textmate Grammar][notes:TMGrammar]
+- SublimeText [Syntax Definitions][ST:Syntax] and [Syntax Doc][ST:SyntaxDoc]
 
 
 ## Release Notes
@@ -115,3 +119,5 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 [TM:RegEx]: http://manual.macromates.com/en/regular_expressions#regular_expressions
 [notes:TMGrammar]: http://www.apeth.com/nonblog/stories/textmatebundle.html
 [TM:LanguageG]: http://manual.macromates.com/en/language_grammars#language_rules
+[ST:Syntax]: http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html
+[ST:SyntaxDoc]: https://www.sublimetext.com/docs/3/syntax.html
