@@ -1,0 +1,42 @@
+{	patterns = (
+		{	name = 'comment.block.beginnig.grok';
+			comment = 'problem description at the beginning of the grok file';
+			begin = '[Ss]tart [Tt]itle\n';
+			end = '[Ee]nd [Tt]itle\n';
+		},
+		{	name = 'keyword.language.grok';
+			comment = 'certain repeating keywords';
+			match = '[Nn]ew\s|[Uu]se\s|[Cc]lear\s|[Cc]hoose\s|[Cc]reate\s|[Rr]ead\s|[eE]nd\s';
+		},
+		{	name = 'variable.grok';
+			comment = 'Tab stops like $1, $2...';
+			match = 'units|^porous\smedia|^surface\n|fracture|\sdual\s|^channel|^et';
+		},
+	 	{	name = 'variable.parameter.grok';
+			comment = 'Tab stops like $1, $2...';
+			match = '\ssolute|boundary condition';
+		},
+		{	name = 'storage.grok';
+			comment = 'Tab stops like $1, $2...';
+			match = 'txt|dat|mprops|etprops|fprops|dprops|oprops';
+		},
+		{	name = 'constant.numeric.grok';
+			comment = 'numbers: decimal or exponential';
+			match = '(\b[0-9]*\.*[0-9]*[ed][\+\-]*[0-9]+\s|\b[\+\-]?[0-9]\.?[0-9]*\s?)';
+		},
+		{	name = 'comment.line.grok';
+			comment = 'commented line';
+			begin = '[!]';
+			end = '$\n?';
+			beginCaptures = { 0 = { name = 'punctuation.definition.comment.grok'; }; };
+			patterns = ( { match = '\\\s*\n'; } );
+		},
+		{	name = 'comment.block.grok';
+			comment = 'comment between skip on and skip off';
+			begin = '^[Ss]kip on';
+			end = '^[Ss]kip off';
+			beginCaptures = { 0 = { name = 'punctuation.definition.comment.grok'; }; };
+			patterns = ( { match = '\\\s*\n'; } );
+		},
+	);
+}
