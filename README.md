@@ -93,7 +93,7 @@ Color schemes can be viewed, modified, and created using [this][online_themes] o
 ## Release Notes
 
 ### 2022-Jan-16
-- fixed an error that occurred when installing the `hgs.tmbundle` on a recent macOS / TM2 not anymore in beta
+- fixed an error that occurred when installing the `hgs.tmbundle` on a recent macOS / TM2 not anymore in beta. Sidenote: Bundles are not stored any longer in `~/Library/Application\ Support/Avian/Bundles` but in `~/Library/Application Support/TextMate/Bundles` ([see stackexchange](https://apple.stackexchange.com/questions/45646/textmate-2-bundle-creation))
 
 ### 2020-Oct-22
 I can't believe that we are in year four! I do enjoy seeing people using this! Unfortunately, there was some sort of download problem which I have fixed, hopefully. Please contact me / [raise an issue](https://github.com/hydroclaus/hgs_grammar/issues) when you see things misbehaving! Also, I'd be curious to hear from people using this with Visual Studio Code or Atom.
